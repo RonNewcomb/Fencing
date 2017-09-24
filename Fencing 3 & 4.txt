@@ -1,0 +1,333 @@
+	Game design is drudgery.  Lists of requirements, spreadsheets of possibilities, and then you gotta fit a hundred interactions onto four buttons, intuitively. Third in the series.
+	The worth of a particular design is directly proportional to the size of the graveyard of ideas it leaves behind. 
+
+
+DRAWING OUT THE FENCER: A DESIGN'S EVOLUTION
+
+
+paper-rock-scissors =  thrust (thumbstick), parry (beat/engage button), deceive (disengage button)
+* Beat or Engage button/trigger
+* Deceive or Disengage button/trigger
+* Invert button (swaps out the set of keyframes that the analog stick interpolate between)
+* "wall" button?  skews the blade so that just moving it pushes the opponent's. (press & bind, prise de fer (take), encirclement/envelopement)
+
+once engaged/taken, move stick = prise de fer. 
+once engaged/taken, wall + disengage = encirclement (one revolution)
+once engaged/taken, wall + engage = press.
+
+-- The entire point of the "wall" moves is to change the mapping of your opponent's inputs to his expected output.  Meaning, it will make it so that when your opponent commits to a move, it makes it worse.
+-- A taken blade is moved away from how the thumbstick says it should be.  Once left alone, the sword will gravitate back to where the thumbstick says it should be, but it slows the opponent down.  Moving the thumbstick to the new location will reduce this slow time. After having one's blade taken & tossed, artificially decrease joint speed until the thumbstick and animation agree on where the blade is?
+-- a blade cannot push or be pushed in the direction of its tip or its pommel.
+-- offensive (thrusting) forte press/parry?
+
+-?- does a blade come back inline faster when it's closer to its fencer's body?
+-?- the artificial out-of-line timer negates the need for right-of-way, but, a stop-hit breaks right of way.  How to simulate stop-hits?  Large vertical movement of body (ducking or standing tall) decreases the timer?  Ducking and/or standing tall will certainly reduce one's ability to advance or retreat...  so it's like trading in one resource for another. 
+
+
+The success of actions in fencing are very dependent on context (the distance, the fencers' balance, what lead up to the action, what's happened so far in the bout, etc.). At first, it's hard to focus on anything other than making your hands and feet do something resembling what you want. As the technique becomes more automatic, start paying more attention to all of those other variables.
+
+http://en.wikipedia.org/wiki/Glossary_of_fencing
+
+------- The godlike offensive forte press -----------------------
+offensive forte press: 
+   opposing foible cannot parry the forte.
+   works best catching the opposing forte on its outside
+   to glise with it, you need to catch the opposing sword pretty near the tip, then let it slide back as you advance
+   vs disengage: fp is neutralized, opponent has reach advantage but not yet right-of-way 
+   if the tip or near-tip is parried (french or italian) from the INside, it's at least as outofline as the base, though the tip is about the same 
+   if the tip or near-tip is parried (french or italian) from the OUTside, the blade is only inline right inthe middle of the blade; the blade has spun laterally, as if preparing for a wall maneuver.
+   if the forte is french-parried on the outside with the forte, the whole blade shifts way out-of-line on the opposing line
+   (What depends on if the parry laterally rotated the opposing blade, or, shifted the opposing blade?)
+   vs another offensive forte press: outside-to-outside, their tips are both pushed ool.
+
+A disengage neutralizes the offensive (thrusting) forte' press -- opponent stays or is back inline -- but still must deal with the thrust.
+
+Bell guard prevents?  Or, the defender shifting his hand outward on counterattack neutralizes it. "hook shot" in other words. 
+epee fencers encourage it.
+--------------------------------------------------------
+
+
+Invert -> forte shift? disengage over?
+Forte shift, opponent draws near,
+
+If forte/press sends tip ool in opposing line, then blade can act as a ceiling or floor to push/take with.
+If forte/press leaves tip inline, then can't really push/take, just glise. 
+Encirclement, swords uncrossed: form a floor/ceiling, then press stick up down up down toward opposing blade
+Encirclement, swords crossed, tip up: press Take and press stick down, up down up etc.
+Take to form floor/ceiling, then press Parry to tap opposing blade vertically up or down.
+Parry + direction = beat blade at an angle?
+
+
+
+
+
+Both experts can beat-parry the sweet spot regularly, does the game threatens to fall into lockstep again... or attenuate in some other manner?  Beaten out-of-line happens by rotating the now-defending player's wrist a lot -- but notice his forte is still mostly, almost, inline.  So his second line of defense is shifting his hand to Press the offending blade out of line.  It won't be by much, but it'll suffice.  
+* when to tap Deceive? 
+** "offer" the sweet spot, 
+* if the sweet spots cross, beating each other's blade does little; they press into one another.  (controller vibrates loudly)
+** Deceive still works here; counter-parry and "wall" maneuvers as well. 
+* neutralize his foible but now contend with his less maneuverable forte. The attacker is now "inside" 
+** there's a clear attacker & defender here.
+* When "inside", the further the attacking blade is from the forte, the less need for FrenchPress and the Italian may do?  But, I artificially increased the lenght of the Italian being out of line to avoid needing explicit right-of-way, so moving the wrist and/or entire blade IS needed.  And is the last line of defense.  (But, if the blade went out of line in the correct rotation, Invert works wonders.)
+** forte can move freely in 2D, button/trigger needed for Press/Push/FrenchParry
+*** The attacker can deceive the defender's forte-parry as well of course.. but the attacker cannot beat. Attacker trying to beat at this stage does nothing but make a glise noise. [[right-of-way says that noise changes rightofway, so that button basically becomes a "lose" button on the attacker's controller.  Seems un-useful and certainly not newb-friendly.]]
+** forte could be moved outside on purpose (with Disengage), then brought back into line (with Engage), then out of line on the other side (by holding Engage), to make a clean sweep of the area and defeat any deception attempt.  But that certainly takes longer. 
+
+
+
+
+* the attacker could "hook-shot" his arm to compensate, but only so much before it gets ridiculous-- the defender could inch his body inside easily, and destroy the attacker.
+** BUT option: attacker disengages by squatting (or other bodily-evasive maneuver) and goes for a stop-hit.
+** so what keeps the foiled attacker from re-cocking and machine-gun stabbing?  Besides right-of-way? Well, the attacker can't Beat since it's foible-to-forte, and once the defender makes contact I don't think the attacker can deceive, either. So, he's stuck *except* for cocking back, but the defender can neutralize that by moving the forte forward with... which is also a great setup for the counterattack. 
+** Option: while the forte has the foible locked outside, by moving the forte even further outside, it's possible for the defender to "advance within" his opponent's space.
+
+
+A trigger is natural for the forte press. The button always goes toward the blade.  What keeps the attacker from always deceiving this far in? It takes longer so the foible becomes active again? It doesn't take longer for real.  
+
+
+Parry is perhaps too fast?  There's a delay with deceive, and will be with take and forte parry.  Imagine Street Fighter if all attacks began as fast as the jab -- there'd be no room in the game for dodging and little for blocking, as no attack moves slow enough to dodge.  So, a delay before the parry connects.  Press? 
+
+
+Invert is a take but pressing toward self? well... i might want to take when the opposing blade is close. Invert is a take when pressing toward self and toward high?
+
+Invert turns the blade roof-like.  Is (in close) Invert == (at distance) forte parry == (at distance) press, except for the range difference?  Point only stays in-line at distance, but can't in close?  Wrist only goes out-of-line at distance, but more of the elbow goes out-of-line in-close?  I think this makes sense "anatomically", but using the blade thusly...  Hold down Invert/Forte for a heartbeat, then stick it up/down to "wipe" downward or upward. 
+
+
+
+
+	Can deceive be implemented on a trigger which just tilts the blade downward?  A parry would miss "naturally" once it's complete. But how to artifically lengthen the deceived parry?  Or it tilts it downward in a circle, the blade going out of line, in line at the bottom, and out of line again as it returns to normal. 
+
+
+	I do think I prefer parry on a button not trigger.  It feels better.  I know that being able to parry at less than full strength is nice, but damn that button feels good. 
+
+
+	Deceive only works when a small wrist flick, a small change in angle, can un-cross the blades.  But if the blades are perpendicular, or, the deceiving blade is crossed at the forte, we cannot deceive at all -- the motion is too large, too slow.  What to do with the deceive button then?  (What to do with Deceive/Disengage in-close? Is still useful in-close.  If both blades are pointing downward, then then are close to parallel.) ANSWER: Disengage when the attacker is inside your out -of line sword shall move your forte *away* from his incoming thrust; Engage moves it toward.  
+	"Cancel" the other's ability to deceive (i.e., throw "scissors") by getting close.  (But disengaging the forte still works)
+
+
+
+CURRENTLY DEAD OR USELESS
+*	Attacker Engage (beat) when his foible is at the opposing forte = do nothing (well, lose right of way per the rules.)
+*	Pressing Engage & Disengage at the same time.  
+
+
+CURRENTLY UNKNOWN
+*	to know if the engage/disengage buttons work on the foible or the forte?  Position?  Opposing blade's position? Whether or not the foible is out of line?  
+*	to shove stuff around with the "wall" maneuvers?
+*	to "go get" one's own blade?
+*	the "take" motion also doubles as a forte parry?
+
+	
+
+
+ 
+------ Fine tuning ------------------
+	BASICS:  is there rock-paper-scissors?  Is it easy to fall into, or hard to find in actual play?
+
+	BASICS:  is there the reach-vs-recovery tradeoff mention in the published posts?
+
+	BASICS:  is precision required?  Reading the opponent's intentions?
+
+	EXPERT PLAY: Don't slam the analog stick for advance / retreat.  Easing up on the sideways direction before coming to the point at which you'd like to stop will keep your character from skidding, tipping over, off-balancing himself, stalling out in case he needs to suddenly change direction, or even sliding while ducking.   
+
+	EXPERT PLAY: A skill-based way to recover quicker.  Position the analog stick near where the sword was "thrown" to "go get it"?
+
+	INTENTIONAL LIMITATION: Down can fine-tune just how far down he ducks.  Fully down with slight forward goes into posotto lunge, and also keeps people from gaming the system by advancing while ducking, which reduces target area.
+
+	EXPERT PLAY: Changing from lean-forward to jump-back causes him to "push off" his opponent's bell guard, separating the two, possibly pushing his opponent off-balance.  
+
+	FEEDBACK: Tip is black when past the body line.  (Extend the body line to infinite.)
+
+	FEEDBACK: "Right of way" is not a visible gameplay mechanic. Stick a halo over the character's head. Or, hand is greyed when lost right-of-way.  Doesn't stay greyed long -- the other should attack now or lose it. Or artificially extend the time out-of-line so as not to need the rule.
+
+	SKILLS: Can the player do the obvious?
+		Timing. Mind reading. 
+		Reaction. Being able to deceive fairly regularly.
+		Coordination. Hit the hanging ball squarely.
+		Skill. Take the blade, and then put it exactly where you want.
+
+	SKILLS: Do actual fencing tactics succeed -- and fail -- in the game as in the real thing?  
+		TACTIC: Feint high, then deceive to a low line.  (Deceive: hold button to put blade out-of-the-way, release button to restore blade.  But when deceiving to a low line, holding Down on the stick should "cancel" the restore... or at least delay it.)
+		TACTIC: Duck for the stop-hit.
+		TACTIC: Defeat the n00b's machine-gun stabs
+		TACTIC:	Retreat or lean to outdistance the lunge by an inch, take advantage of their relative immobility.
+----------------------------------------------
+
+
+
+
+--------- ESSAY START  -----------
+	[...]  A lone fencer thrusting at air experiences the reach versus recovery tradeoff, but when a competitor's blade interferes, the interplay is, at four buttons or less, rochambeau.  With this framework in place only the look and names are left. 
+	For the shoulder buttons, brainstorming from experience produced an embarassment of riches:  the Italian "rotate" parry, which is quick near the tip but slow near the hand; the French "shift" parry (quicker at the hand, only); a combination of those for a forte parry, which keeps the tip inline; inverting the blade for in-close down-stabs; the circular wrist-flick that disengages or deceives; pressing; binding; encircling -- there are more.  Even if we had enough buttons, players would experiment with combinations.  Useful button combinations create depth as well as economy of interface, because each button becomes a tool rather than a canned solution.
+	The easy answer was, of course, rochambeau:  deceptions defeat beat parries, which defeat thrusts, which defeat deceptions.  The result makes a fine Nintendo game, but it's so toy-like it reduces fencing maneuvers to mere theme.  I might as well name the buttons rock, paper, scissors.  That does not explore what it's like to fence.
+	Again, fencing differs from the unarmed martial arts because, despite the plethora of names, there is not a collection of discrete maneuvers easily assignable one per button.  But maybe there's a set of distinct concepts which can be used alone or in combination to generate the full palette?  Perhaps apply rochambeau to the forte and foible separately, and interpolate?  Or introduce the concept of the mid-blade?  Is it worth a button to keep the blades in contact?  Or apart?  What about a circular wrist flick? A particular tilt?  A seeking motion?  The mind boggles. 
+
+	Experience with swordplay teaches one to see the sword as a collection of joined tools which can often be used simultaneously.  For example, one may advance a thrust while the forte shifts toward the opposing blade to deflect it by a critical inch.  	Due to the pathological economy of fencing maneuvers, the forte press was highly useful. So useful, in fact, I worried it would be game-breaking.  The slight loss of forward range is too slight.  (But it's great as a pure defensive move!)  Why isnt' the forte press gdlk in actual fencing?  Right of way? 
+
+
+-------  what problem was I trying to solve with this solution? --------------
+	Well, pressing the blades work if you use the stiffer part of your blade on the opponent's foible, and fails vice-versa.  So I investigated the idea of where the swords crossed determining if the same maneuver acted as Rock or as Paper.   [[But there's 4 different ways of the swords crossing, every combination of forte and foible.   Further, I wanted to keep the "sweet spot" in some form.]]  One solution smoothly interpolates the blade from Rock to Paper. [[And a kind of "sweet spot" is between them... but not necessarily right at the mid-point of the blade.]]  But then what happens when blades cross, one blade being 63% Rock 37% Paper, the other 81% Rock 19% Paper?  Though this happens in the real world constantly, it muddies gameplay. But then again, a spot where the blade suddenly switches from 100% Rock to 100% Paper would be as bad. A few pixels either way determine a very different result, and in full-speed bladework "a few pixels either way" is the norm, so bladework as a whole would seem unpredictable. 
+	Do we then want to split the difference and define the middle third of the blade as the mid-blade?  My experience around fencers found that, as a general rule, the blade has two parts, not three.  But in a few situations they would speak of the mid-blade. (Plus, fencing has a standard term for it, so it's obviously useful at least occasionally.)  I could use the concept of mid-blade just here, splitting the difference between muddy interpolations and either-or cliffs, and also give the players the occasional reason to mention it as well, for similar reasons.  There is, after all, a "sweet spot" somewhere around the mid-blade.
+----------------------------------------------------------
+
+
+---- Stop-hits and the parry timer -----------
+	....Thumbsticks controlled the body and sword.  The rock-paper-scissors comprised the thrust (press toward on the thumbstick) which lost to the parry (tap the beat button) which lost to the deceive (tap the disengage button) which lost to the thrust.  Since many foil fencers wish right-of-way needn't exist, I tailored the physics so a sweet-spotted parried thrust would practically ricochet off into the woods.  But that made stop-hits impossible, and I still didn't have a lot of things, such as taking the blade, press and bind, envelopement, etc.
+	Right-of-way enforces the to-and-fro aspect of fencing.  But the attacker can, say, suddenly duck very low and attack again, bodily avoiding the counterattack.  If he hits clean, and his opponent does not hit him within a half-second or so, it's pronounced a stop-hit, a hit "out of time", and he wins it anyway.   It's a good surprise move when used sparingly, but my out-of-line timer made it impossible. 
+	I considered vertical body movement decreasing the timer, but I didn't want to encourage players to constantly wiggle the thumbstick just to machine-gun-stab.  So the extremes of the stick are needed.  Since ducking very low or standing very tall made it difficult to move otherwise, I rationalized it as trading mobility for pressuring tactics, both being common gameplay resources. 
+-----------------------------------------
+
+
+----- The History of the Take button -----------------
+	Maybe... the third button slightly rotates the blade laterally, so it lays across the body.  This defeats Deceive because it is lain across -- there is no "other side" to deceive to.  Furthermore, it creates a kind of "roof" or "floor" than the other player cannot simply pass his sword by via the analog stick.  It can passively knock a sword out of line by tilting the sword vertically -- tip going into the floor or into the clouds, instead of into the man.  Moving the floor up or down will lead with the tip, and if moving away from the opponent's blade when crossed, the lateral blade will "take" the other blade with it.  Perhaps pressing Parry with it will press/bind the opposing blade out-of-line.
+	Parry defeats it because, well, if parry works downward or upward, the parry creates an opening.
+	What does a fencer do when her opponent holds his blade across?  Thrust is an obvious option, as it is such a defensive position. 
+
+	Taking the blade, binding, encirclement -- all of these are related in that they form a "wall" to your opponent's blade.  You use the wall to either hold the opposing blade out of line, or "go get it" and push it to somewhere else, or just swirl it in circles to confuse your opponent.  (Circling is similar to tossing the blade into a random direction, but it doesn't push the blade very far in that direction unless you stop encircling and then choose press/bind.  For the victim it's harder to predict how to react, but easier to recover from once figured out.)  
+
+
+	For binds, presses, takes, and encirclements, it was a small epiphany to categorize them all as "wall" moves because they all created a "wall" to the other blade, and put that wall to various uses.  None of the existing options really allowed for directly going after the opposing blade.  A beat-parry merely swatted it out of the way.  These maneuvers focused their attention on the opposing blade itself, to push or hold it, to put it elsewhere, to cordone certain areas, or just to swirl it around for confusion's sake.  
+
+
+	I first tried Take to be "sticky blade" with the taker controlling both blades, the defender only allowed to move his blade 10% from the point of initial Take contact.  That didn't work.  Besides leading to some extremely artificial circumstances, it allowed the attacker to push the blades all the way to the defender's chest, release, then finish the point.  
+	Take only disallows movement past the taking blade.  It forms a wall, and the attacker usually uses that wall to push the blades off somewhere. Moreover, some directions can be pushed sooner than others.  One can bring up a blade to contact the bottom of the other and push upward immediately, but to push the blades downward, his blade must first 'twist' to above the other.  That takes extra time, especially if his wrist is far below -- the elbow and possibly whole arm need rise.  The opposing blade can move or disengage during the lengthy setup.  It's simple in theory, but the translation to an effectively 2D format, and the math and such to enable it, wasn't.
+	For one, when the blades are perfectly side-by-side in an X shape, and one wants to Take, is he tilting the blade over his opponents or under?  Which way determines which directions can be pushed.  Usually it's over, as that only requires a turning of the wrist much like a beat parry.  To go under may require sliding the wrist sideways to the other side of the opposing blade, which is slower. 
+	I'll assume the quicker, over the top take.  One of my buttons illustrates a forte press which could be combined with take for the upward pushing take.  Or more generally, bringing the opposing blade closer to the aggressor's wrist is the norm. 
+	But that's if the opposing blade is inside.  If the opposing blade is outside, well, even backhanded it pushes downward, but you'd never want to do this.  It goes too far and you can't reach your opponent's blade with your foible at all. Backhanded, you'd slide your wrist, or, encircle the blade.  Eh, I think it's still possible either way.  
+----------------------------------------------
+
+
+----- Math and collision detection -------
+	mathmatically, how to tell when two moving lines in 3-space intersect or attempt to pass through one another?  
+	normaly the blades pass through each other except for beat-parry, which is a very simple 2D test in the xy plane, and "take".  "Take" produces a 2D point in the xy plane that the other blade cannot animate past.  Is this 2D point within the polygon (quad) defined by the new and old positions of the attacking blade?
+	Polygon defined, point defined by exact mid-point of the blocking blade, code works.  Now fix it by changing the wrist angle so it's line goes directly to (or less than) the block point. 
+
+  If so, stop it (either at the old location or calc the exact new). 
+	If both blades are Taking, then.. 
+
+	The above blocks a moving attacker's blade.  But the defender's moving blade can also swipe a thrust.  Assuming a Take in midair is skewed across, then up/down on the thumbstick 'swipes" any thrust.  So, create the polygon of the defender's moving blade, and...  what point does the attacker's blade condense to?  
+	Well, the polygon created from the moving sword can be extended to a plane by taking the cross product of the new sword with the wrist-to-oldwrist vector, and use that as the plane's normal.   Then we can ask if & where on the other sword the plane intersects, and THAT point is used to see if it's in the polygon. 
+	Then we can do the exact same thing with the swords swapped.
+	Then we can figure out what to do about it.  A sword that isn't beating, disengaging, or taking is vulnerable, but that is the sword that is thrusting, or preparing to thrust. 
+	Beating sends a blade toward the woods, an interrupted disengage bounces it at an odd angle (due the circular motion) but it doesn't go far.  Take is a slow movement, a prepatory movement.  Unlike beat & disengage, take will insist (and resist, if pitted against another take).  
+	L3/R3 for a bodily sidestep?
+	Beat & disengage is a button, take and invert are triggers.  Er, but take() also has endtake(), which makes no sense for triggers?  Well, take needs rewriting anyway because it's modal and insists on asymmetry -- agressor and defender.  Take is prep, so joystick (push/press) or deceive (encircle one way? disengage forte?) invert (encircle other way?) and parry (press sideways?).  
+	Who wins take vs take depends on geometry: forte beats foible. 	
+----------------------------------------------
+
+
+----- alternate control schemes -------------
+	In an early build, both analog sticks fully controlled the blade in 2D:  one the hand and one the swordtip.  Shoulder buttons advanced and retreated.  It was confusing, counter-intuitive, and even nonsensical when pushing the sticks in opposite directions, as if a metal blade could lengthen or shorten.  Nor did it allow the lunge, since beat and deceive claimed the other two buttons.  I returned to this, with a new insight:  have the swordtip's stick instead rotate the tip around the hand.  It's still counter-intuitive in that, although the sword tip mimics the stick vertically, horizontal motions only shade the blade (because it's moving toward and away from the screen).  But it allows the full variety of wrist motions:  beat parry by jabbing the stick sideways; deceive with a timely U-shaped motion; concede a similar overhanded motion for the coulŽ; swirl the stick for an encirclement; by homing in on the opposing blade, press; by holding it there, bind; and so on.  This also frees two shoulder buttons for, say, shifting the forte along the z axis, or mimicking the hand's movement with the body, to lunge, duck, or stand tall.
+	Makes a decent simulation, though a difficult game to learn.
+	But is this a casual game or a sim?  Rochambeau is appropriate for casual, as is assigning a stick to the fencer herself.  But the better at fencing one gets, the less one uses the body.  Advance and retreat is about all that's truly needed, and the stick is put to better use rotating the blade.  This grants a realistic range of maneuvers, but requires learning.  Some racing games allow both simulation and arcade modes, so if I could define the casual's buttons in terms of the full simulation, then each player could choose whichever input scheme they'd like. 
+
+Maybe:
+   Rather than hold Advance for smooth advancement, press to move the front foot forward, release to allow the rear foot forward)
+
+Maybe:
+   One stick controls (shifts) blade (tip).  One stick controls fencer's body.  [Body doesn't need that much detail of movement.]
+   L & R each control the foible & forte, 1 & 2 each control engage & disengage. 
+   Hold button versus tap button = beat versus press. 
+   What about tilting the blade forward, back, even inverting? L3? Can't. L3 isn't analog. (Neither is the 4th shoulder button.)
+   
+Maybe:
+   The sticks control the endpoints of the sword in the xy plane, like a 2D game. 
+   Shoulder buttons advance and retreat. (Especially if the shoulders are analog.)
+   Other pair of shoulder buttons engage/beat and disengage? 
+   I think I tried this initially, and it was confusing as all get-out. 
+
+Maybe: 
+   One stick shifts the hand in the xy plane; other stick rotates the tip in the yz plane. Circling stick makes encirclement. 
+   Two shoulder buttons control hand movement on z axis. Useful for forte press/parry.  (Or just one button? Do we ever need to move the forte away from the opponent's blade?)
+   But if other shoulder buttons are advance & retreat, then what is beat? Parry? Disengage? Deceive?  I think if tip is rotatable, then deceive & beat buttons aren't needed.  The stick moves the sword (and tip) in/out along the z axis. Disengage/deceive moves the blade at the same speed as beat.  So, at the analog stick's speed.  
+   One button left. Plus L3 & R3.  (Maybe, duck or stand tall, whichever the hand is doing? Lunge?) (Spin wrist to use crossguard?)
+-----------------------------------------------------
+
+
+
+------ Other areas of the game ----------------------
+Upon a TOUCHE, put defender into a Megaman1 style hitstun, with slowmo and an audible "tou-CHE!" and perhaps his own cursing, send him reeling back from his opponent cursing as input is cut from both controllers... so they end up at the starting distance and position from each other, and then after a moment for the visual shock to wear off, "commence!".  To re-center the stage when we're on the right side of it, show the ref running to the left, and make the characters look like they're circling one another.  (Not sure how to do that if we can't see their feet.)  
+
+Controller vibration hints at what opponent was trying to do?
+
+A crossguard can be used to illustrate the rotation of the weapon.
+
+Leave behind fireworks at the point they happened.  This gives some continuity to the battle, rather than each exchange being forgotten the moment its done. Fireworks, or "windworks".  
+
+	The circular spark, whose center highlighted where and when the blades made contact, we upgrade to a pair of jagged-base cones. The cones point to the exact point where the blades touch, which is easier to interpret when the contact point moves around a lot during a glisŽ.  The cones can also be rotated around the contact point, unlike the circular spark, which now carries new information.  The blades aren't necessarily side-by-side when they touch. It's perfectly possible that one is laid on top of the other.  The cones can rotate around from being orthogonal to the blades to highlight which blade is "coming over", as in a coulŽ.  They're also very pretty during an encirclement.
+-----------------------------------------------------
+
+
+
+---- Casual gaming, career mode, the hardcore -------
+	With the core gameplay solid, it's time to consider the larger format of the game, and the audience. Casual gamers seek entertainment, not mastery.  Or to put that another way, pure mechanics don't entertain everyone.  Story motivates others to return and invest.  We could fence within a larger world of travel and sightseeing, casting the game as the career, or even the life, of a single fencer.  Multiple tournaments, populated by a rotating cast, allow character growth in both the numeric and narrative meanings of the phrase, and losing a tournament wouldn't be the end of the world as it is with fighting games.    Social and training minigames increase replayability beyond even mastery and character growth.  A tournament-only mode for dedicated players to hone their skills is added just as easily.
+	Some players, usually the ones that label themselves "hardcore," may get stuck with a particular idea: that the career mode is for soft-headed casualites, and only mechanical mastery of the fencing core is the "true" game.  To break this somewhat autistic view of our game, offer the "realism off" option:  each match must be replayed until it is won.  See, most fighting games ask the player, not the character, to win tournaments. That's evidenced by it ignoring losses:  the player replays the same fight until it is won, even switching characters to do so.  Again, such a game assumes mastery motivates the player, and never narrates a character's loss.  But that isn't realistic.  Even top-rated fighters lose a few.  So we highlight our "fighting game" mode as artificial, and let the realization sink in.
+	  (Whether the game's interface renders that as modes, or an checkbox option, is separate concern. But note: the names "career mode" and "arcade mode" would be precisely swapped. "Career" sounds like a serious time investment while "arcade" sounds quick and easy.  But it is career mode with story and flavor, while arcade mode is pure mechanics.)
+
+(Today's arcades being online, rather than brick-and-mortar, changes nothing.) ("Hardcore" means dedicated, a description of players.  To say a game is hardcore implies that one won't get much enjoyment out of it without dedication.) (Dedicated gamers begin as casual gamers.)
+-----------------------------------------------------
+
+
+----  Implementation notes ----------------- 
+ Technical note: the AI is subclassed from the dual-analog controllers class.  This means the game is implemented as a pure two-player game, but methods such as getButton(b) or getStick(s) are overridden by the AI subclass.  This helps ensure the AI does not cheat, since the AI must interact with the characters through the exact same interface as human players.  This setup may be untenable for games in which the player mows down hordes of one-trick ponies, but for games "between equals" or with playable NPCs, it carries benefits of code tidiness.
+	Though OO purists and AI experts may point out that many methods are needed for AI.  For example, the original code had functions that calculated how much time existed until the human opponent's tip would reach its target, how much time until uncrossed swords could be crossed given their current position and momentum, how much of a benefit immediately parrying vs. waiting until a more perfect parry existed, etc.   But these methods are equally useful for tutorial modes of the game, as the game can not just tell the player that these relationships are important, but illustrate them with graphics overlaid on top of the action.  So again, the AI does not have much in the way of stuff specific to it.  Even the learned ability to learn and anticipate the human player can be used in the tutorial, to show the player how predictable his playing style is. 
+	Game recognizes certain situations -- "deception!", "counter-parry!", "coule'!", etc. -- for added excitement. 
+-----------------------------------------------------
+
+
+------- Programming language design and game design ---------------------
+
+	 A gameplay rule like "the controller for the fencer whose blade is being forced into a new line will vibrate." may require multiple lines of code in disparate locations.  Say, there's a Player1.VibrateOn() and Player1.VibrateOff() functions, and simlarly for player 2.  On() is called in the Take action of course.  But Take can end in three different ways -- the taker releases the take button, the takee presses teh deceive button, or the blades become uncrossed on their own, so  Off() may go in three places.  Hence, to implement the simple rule requires at least four lines of code spread out over the code base.  while it may be possiblel to bring all 3 places that take mode ends to a single function, and it might even be possible to consolidate BeginTakeMode() and EndTakeMode() into the same function TakeMode(on/off), the inside of that function gets really messy and hard to debug. 
+	Sometimes variables exist merely because code can't say "the value of X on the previous frame" or "if X was 5 the last time BeginTake(player1, anywhere) happened for player 1, then..."
+
+	Even stating "the power level ranges from 1 to 5" involves asking what the power level starts at, what makes it rise, what makes it fall, what happens if it tries to rise too high or fall too low, etc.  This is implemented by a variable, which needs 1) initializing to a sane number, 2) increased at some point in time; 3) decreased similarly, by some event;  4) constraint checking by said events to ensure it stays in the range.  That's at least four lines of code, spread in almost as many locations. 
+	Granted, declarative code, like a mathematical function, helps, but sometimes the full answer is nonlinear, nondeterministic, or just plain "random" as in the case of "whenever the player decides to push a button."   Math cannot express "whenever Jimmy presses the X button".
+	Mixing declarative rules "the power level is four times the oil and electricity output" with imperative rules "it uses up one power level to use Laser Blast" can easily leave holes:  Pressing the laser blast button decreases the oil or the electricity output?  Or splits the difference?  
+
+
+	So variables represent the past.  Sometimes that is good and right.  For example, a Wallet variable that holds how much money a character has is a natural use for a variable.   But frequently in coding a variable just remembers that some minor piece of code ran or produced a value back then, or whatever.  These annoying "remember this for later/elsewhere/elsewhen" variables need be excised by the use of the past tense and special constructions that hide their necessity: 
+
+	"if X was 5 the last time player 1 did a fully-committed BeginTake()..."
+	"if X was 5 when BeginTake(player1, __, ___, 100%)"...
+-->
+	boolean __x_was_5_when__autogen_variable = false;  /// hidden, auto-generated code
+	void BeginTake(character p, float x, float y, percent committed)
+	{
+		__x_was_5_when__autogen_variable  =  ((x == 5) and (p == player1) and (committed == 100%);    /// hidden, auto-generated code
+
+Maybe the autogen variable needn't be a global but a class member, or maybe it's per-instantiation anyway ("..the last time THIS player did.."). Either way, it isn't seen.
+
+
+Some even reference the future, such as this defender's wrist which will continue to be deflected until the defender backs off. 
+        boolean  aggressor.Target.deflected_wrist = (aggressor pressed TAKE button AND target got caught by it AND target tried to move against the opposing blade in definace of the Solid Objects rule AND target has not yet let up pressure *since the last time the rest of this became True*);
+
+If this all seems like Functional Programming, well, functional still cannot reference teh past "magically" cause that would be a side-effect.  It has to return and pass that informatino about BeginTake() around until it's consumed by the if-statement. That's hardly elegant.
+
+Some variables represent the present state of affairs, like "taking_blade" which is equal to a Character while teh Take mode is active.  The variable doens't represent really if the character within is the performer (subject) or victim (direct object) of the verb 'taking'. 
+
+	To begin (player - a person) taking the blade (commitment - a percentage) at (position - a coordinate):    ......
+		if x is 5, now foo is true;
+		...
+
+	To decide if (player - a person) took the blade (100% - a percentage) [at (position - a coordinate)]: 
+		decide on foo.
+
+	To decide what condition is the last time that (ph - phrase): (- {-backspace}  &&  {ph})  -).
+
+	Every turn:
+		if x was 5 the last time that player1 took the blade 100% [at somewhere], then... 
+
+-----------------------------------------------------
+
+
+------ Game design theoretical -------------------
+Paper-rock-scissors, except, it's better to win with rock.  But how much better?  Typically an option with a better payoff should be attempted a number of times in direct proportion to the size of its payoff.  If rock grants 100 points but paper & scissors only 1 point, then choose rock often.  Even if you lose many times, it only takes one win with rock to make up for it.   But if it's unclear how much better one optino is over the other, then different personalities will choose each with differing frequency.  This is good because it allows personality into the game... at least until they play the game long enough to "feel" what the better options are, and adjust themselves to the "right" ratio.  
+R 10 P 1 S 5
+
+The problem with RPS is that it's only interesting after several rounds, once you & your opponent have  built up a history of wins & losses and you get an idea of each other's proclivities.  In the beginning it's essentially random who wins.  So, make Rock worth twice as much.  Now we'll get an idea of a person's proclivities sooner -- does he go straight for the prize, or tries to counter his opponent?  But the later rounds are not as interesting -- rps lacks context, situation... *variable* payouts.  Especially if Rock is worth a lot to one guy but paper is worht more to the other guy. in RPS this doesn't work because one guy's payoff also trumps the other guy's payoff, but in a game of many more than 3 options, where Payout is a combinatino of short term gains & long term potential this would work.  How much is Rock worth "nakedly", and how much to each player, and how much to each player's situation?
+
+chance of winning with it slight + big payoff   R=100!!!
+chance of winning with it mod + mod payoff  S=50!
+chance of winning with it good + slight payoff  P=1.
+-----------------------------------------------------
+
